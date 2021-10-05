@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.js": "/yongcha/static/js/main.79d72520.chunk.js",
-    "main.js.map": "/yongcha/static/js/main.79d72520.chunk.js.map",
-    "runtime-main.js": "/yongcha/static/js/runtime-main.9965ed68.js",
-    "runtime-main.js.map": "/yongcha/static/js/runtime-main.9965ed68.js.map",
-    "static/js/2.c0704f58.chunk.js": "/yongcha/static/js/2.c0704f58.chunk.js",
-    "static/js/2.c0704f58.chunk.js.map": "/yongcha/static/js/2.c0704f58.chunk.js.map",
+    "main.js": "/yongcha/static/js/main.a25a64cc.chunk.js",
+    "main.js.map": "/yongcha/static/js/main.a25a64cc.chunk.js.map",
+    "runtime-main.js": "/yongcha/static/js/runtime-main.8bdc7a5f.js",
+    "runtime-main.js.map": "/yongcha/static/js/runtime-main.8bdc7a5f.js.map",
+    "static/js/2.de82a625.chunk.js": "/yongcha/static/js/2.de82a625.chunk.js",
+    "static/js/2.de82a625.chunk.js.map": "/yongcha/static/js/2.de82a625.chunk.js.map",
     "index.html": "/yongcha/index.html",
-    "static/js/2.c0704f58.chunk.js.LICENSE.txt": "/yongcha/static/js/2.c0704f58.chunk.js.LICENSE.txt"
+    "static/js/2.de82a625.chunk.js.LICENSE.txt": "/yongcha/static/js/2.de82a625.chunk.js.LICENSE.txt",
+    "static/media/noPosterSmall.png": "/yongcha/static/media/noPosterSmall.cfcd0cff.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9965ed68.js",
-    "static/js/2.c0704f58.chunk.js",
-    "static/js/main.79d72520.chunk.js"
+    "static/js/runtime-main.8bdc7a5f.js",
+    "static/js/2.de82a625.chunk.js",
+    "static/js/main.a25a64cc.chunk.js"
   ]
 }
