@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
     font-size: 12px;
+    width: 200px;
+    margin-right: 10px;
 `;
 const Image = styled.div`
     background-image: url(${props => props.bgUrl});
-    height: 180px;
+    height: 300px;
     background-size: cover;
     background-position: center center;
     border-radius: 3px;

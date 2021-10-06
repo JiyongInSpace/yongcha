@@ -142,16 +142,16 @@ const TabBtn = styled.button`
     box-sizing: border-box;
     &:hover{
         background-color: black; 
-        color: red;
+        color: #f70555;
     }
     &:first-of-type{
-        border-bottom: ${props => props.tab === "production" ? "2px solid red" : "none"};
+        border-bottom: ${props => props.tab === "production" ? "2px solid #f70555" : "none"};
     }
     &:nth-of-type(2){
-        border-bottom: ${props => props.tab === "youtube" ? "2px solid red" : "none"};
+        border-bottom: ${props => props.tab === "youtube" ? "2px solid #f70555" : "none"};
     }
     &:last-of-type{
-        border-bottom: ${props => props.tab === "season" ? "2px solid red" : "none"};
+        border-bottom: ${props => props.tab === "season" ? "2px solid #f70555" : "none"};
     }
 `;
 const TabContainer = styled.div`
@@ -161,7 +161,7 @@ const TabContainer = styled.div`
     overflow-y: scroll;
     height: 420px;
     &::-webkit-scrollbar{width:5px;}
-    &::-webkit-scrollbar-thumb{background-color: red;}
+    &::-webkit-scrollbar-thumb{background-color: #f70555;}
     &::-webkit-scrollbar-track{background-color: black;}
 `;
 

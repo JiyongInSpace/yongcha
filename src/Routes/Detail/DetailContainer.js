@@ -39,7 +39,6 @@ export default class extends React.Component{
     }
     render() {
         const { result, error, loading, isMovie } = this.state;
-        console.log(result);
         return(
             <DetailPresenter
                 isMovie = {isMovie}

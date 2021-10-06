@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const GlobalStyles = createGlobalStyle`
     ${reset};
@@ -16,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 12px;
         background-color: rgba(20, 20, 20, 1);
         color: white;
-        padding-top: 50px;
+        padding-top: 60px;
     }
 `
 
