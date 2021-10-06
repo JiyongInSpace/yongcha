@@ -18,6 +18,9 @@ const GlobalStyles = createGlobalStyle`
         background-color: rgba(20, 20, 20, 1);
         color: white;
         padding-top: 60px;
+        &::-webkit-scrollbar{width:5px;}
+        &::-webkit-scrollbar-thumb{background-color: #f70555;}
+        &::-webkit-scrollbar-track{background-color: black;}
     }
 `
 

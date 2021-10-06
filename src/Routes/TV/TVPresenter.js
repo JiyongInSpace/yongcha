@@ -6,13 +6,14 @@ import Loader from "Components/Loader";
 import Message from "Components/Message";
 import Poster from "Components/Poster";
 import { Helmet } from "react-helmet";
-
+import Footer from "Components/Footer";
 
 const Container = styled.div`
     padding: 20px;
 `;
 
 const TVPresenter = ({topRated, airingToday, popular, error, loading}) => loading ? <Loader/> : (
+    <>
     <Container>
         <Helmet>
             <title>TVㅣYongcha!</title>
@@ -64,6 +65,8 @@ const TVPresenter = ({topRated, airingToday, popular, error, loading}) => loadin
             )}
             {error && <Message text={error} />}
     </Container>
+    <Footer />
+    </>
 );
 
 

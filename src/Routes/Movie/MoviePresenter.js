@@ -6,6 +6,7 @@ import Loader from "Components/Loader";
 import Message from "Components/Message";
 import Poster from "Components/Poster";
 import Helmet from "react-helmet";
+import Footer from 'Components/Footer';
 
 const Container = styled.div`
     padding: 20px;
@@ -13,6 +14,7 @@ const Container = styled.div`
 
 
 const MoviePresenter = ({nowPlaying, upcoming, popular, error, loading}) => loading ? <Loader/> : (
+    <>
     <Container>
         <Helmet>
             <title>MovieㅣYongcha!</title>
@@ -64,6 +66,8 @@ const MoviePresenter = ({nowPlaying, upcoming, popular, error, loading}) => load
             )}
             {error && <Message text={error} />}
     </Container>
+    <Footer />
+    </>
 );
 
 MoviePresenter.propTypes = {

@@ -18,6 +18,7 @@ const DetailPresenter = ({result, error, loading, isMovie}) => {
     </Helmet>
     <Loader />
     </> : (
+    <>
     <Container>
         <Helmet>
             <title>{`${result.title ? result.title : result.name}ㅣYongcha!`}</title>
@@ -72,6 +73,7 @@ const DetailPresenter = ({result, error, loading, isMovie}) => {
         </Data>
         </Content>
     </Container>
+    </>
     )
 }
     

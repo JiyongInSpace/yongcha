@@ -4,11 +4,11 @@ import styled from "styled-components";
 import Slider from "react-slick";
 
 const Container = styled.div`
+    padding: 0 20px;
     :not(:last-child){
     margin-bottom: 50px;
     }
     .slick-next{
-        right: -10px;
         top: 45%;
         z-index: 10;
         transform: scale(1.5);
@@ -18,7 +18,6 @@ const Container = styled.div`
         &:active{transform: scale(1.3);}
     }
     .slick-prev{
-        left: -10px;
         top: 45%;
         z-index: 10;
         transform: scale(1.5);

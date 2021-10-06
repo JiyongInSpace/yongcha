@@ -17,7 +17,6 @@ export default class extends React.Component{
         if ( searchTerm !== "" ){
             this.searchByTerm(searchTerm);
         }
-        e.target.value = '';
     }
     updateTerm = e => {
         const {target : {value}} = e;
@@ -27,10 +26,11 @@ export default class extends React.Component{
     }
 
     searchByTerm = async term => {
+        this.setState({loading: true});
         try{
             const { data : { results : movieResults }} = await movieApi.movieResults(term);
             const { data : { results : tvResults }} = await tvApi.showResults(term);
-            this.setState({loading: true, movieResults, tvResults});
+            this.setState({movieResults, tvResults});
         }catch{
             this.setState({error: "cannot search"})
         }finally{

@@ -7,21 +7,26 @@ import Message from "Components/Message";
 import Poster from "Components/Poster";
 import Helmet from "react-helmet";
 
-
 const Container = styled.div`
     padding: 20px;
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+    padding: 0 20px;
+    margin-bottom: 50px;
+`;
 
 const Input = styled.input`
     all: unset;
     font-size: 28px;
     width: 100%;
+    border-bottom: 1px solid #f70555;
+    padding-bottom: 10px;
 `;
 
 
 const SearchPresenter = ({movieResults, tvResults, searchTerm, error, loading, onSubmit, updateTerm}) => (
+    <>
     <Container>
         <Helmet>
             <title>SearchㅣYongcha!</title>
@@ -67,6 +72,7 @@ const SearchPresenter = ({movieResults, tvResults, searchTerm, error, loading, o
             {tvResults && movieResults && tvResults.length === 0 && movieResults.length === 0 && (<Message color={"gray"} text={`검색 결과가 없습니다.`}/>)}
         </>}
     </Container>
+    </>
 );
 
 SearchPresenter.propTypes = {
