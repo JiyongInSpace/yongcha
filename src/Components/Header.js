@@ -44,7 +44,7 @@ const HLink = styled(Link)`
 
 const headerWithRouter = props => (
     <Header>
-        <Logo>Yongcha!</Logo>
+        <Logo>Yongcha</Logo>
         <List>
             <Item current={props.location.pathname === "/"}>
                 <HLink to="/">Home</HLink>
